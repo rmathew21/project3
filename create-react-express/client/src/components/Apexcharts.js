@@ -4,7 +4,7 @@ import React, {Component} from "react";
 import Chart from "react-apexcharts";
 // Package to interact with ALpha API
 var Alpha = require('alpha_vantage_api_wrapper').Alpha
-var alpha = new Alpha('AIzaSyD38Bm-q_7x8vDGceYzZUntAR4QlgukMvQ')
+var alpha = new Alpha('API KEY GOES HERE')
 
 class Stockchart extends Component {
     constructor(props) {
