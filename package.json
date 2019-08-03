@@ -9,7 +9,11 @@
     "@material-ui/icons": "4.1.0",
     "chartist": "0.10.1",
     "classnames": "2.2.6",
+    "express": "^4.16.3",
     "history": "4.9.0",
+    "if-env": "^1.0.4",
+    "mongodb": "^3.3.0-beta2",
+    "mongoose": "^5.6.8",
     "perfect-scrollbar": "1.4.0",
     "prop-types": "15.7.2",
     "react": "16.8.6",
@@ -18,16 +22,13 @@
     "react-google-maps": "9.4.5",
     "react-router-dom": "5.0.1",
     "react-scripts": "3.0.1",
-    "react-swipeable-views": "0.13.3",
-    "express": "^4.16.3",
-    "if-env": "^1.0.4",
-    "mongodb": "^3.3.0-beta2"
+    "react-swipeable-views": "0.13.3"
   },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd create-react-express/client/public && npm run start",
+    "client": "cd client/public && npm run start",
     "seed": "node scripts/seedDB.js",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
@@ -58,11 +59,11 @@
     "typescript": "3.5.1"
   },
   "devDependencies": {
+    "concurrently": "^4.1.1",
     "eslint-config-prettier": "4.3.0",
     "eslint-plugin-prettier": "3.1.0",
-    "prettier": "1.18.2",
-    "concurrently": "^4.1.0",
-    "nodemon": "^1.18.7"
+    "nodemon": "^1.18.7",
+    "prettier": "1.18.2"
   },
   "browserslist": {
     "production": [
