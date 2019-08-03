@@ -8,6 +8,6 @@ const userData = new Schema({
   Sector: { type: String }
 });
 
-const UserData = mongoose.model("userData", userDataSchema);
+const User = mongoose.model("User", userData);
 
-modules.export = UserData;
+module.exports = User;
