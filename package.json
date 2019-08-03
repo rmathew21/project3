@@ -42,15 +42,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/material-dashboard-react.git"
+    "url": "git+https://github.com/rmathew21/project3.git"
   },
   "keywords": [],
   "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/creativetimofficial/material-dashboard-react/issues"
+    "url": "https://github.com/rmathew21/project3/issues"
   },
-  "homepage": "https://creativetimofficial.github.io/material-dashboard-react/#/dashboard",
+  "homepage": "https://educated-trader.herokuapp.com/",
   "optionalDependencies": {
     "@types/googlemaps": "3.36.4",
     "@types/markerclustererplus": "2.1.33",
