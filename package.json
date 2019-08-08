@@ -1,6 +1,9 @@
 {
   "name": "material-dashboard-react",
   "version": "1.7.0",
+  "engines": {
+    "node": "12.6.0"
+  },
   "description": "Material Dashboard React. Coded by Creative Tim",
   "private": false,
   "main": "server.js",
@@ -46,6 +49,7 @@
     "concurrently": "^4.1.1",
     "eslint-config-prettier": "4.3.0",
     "eslint-plugin-prettier": "3.1.0",
+    "nodemon": "^1.18.7",
     "prettier": "1.18.2"
   },
   "browserslist": {
