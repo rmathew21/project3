@@ -31,7 +31,7 @@
   "bugs": {
     "url": "https://github.com/creativetimofficial/material-dashboard-react/issues"
   },
-  "homepage": "https://github.com/rmathew21/project3#readme",
+  "homepage": "https://frozen-mesa-87747.herokuapp.com/",
   "optionalDependencies": {
     "@types/googlemaps": "3.36.4",
     "@types/markerclustererplus": "2.1.33",
