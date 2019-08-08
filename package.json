@@ -3,7 +3,7 @@
   "version": "1.7.0",
   "engines": {
     "node": "12.6.0"
-  }
+  },
   "description": "Material Dashboard React. Coded by Creative Tim",
   "private": false,
   "main": "server.js",
