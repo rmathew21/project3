@@ -5,31 +5,37 @@
   "private": false,
   "main": "server.js",
   "dependencies": {
-    "chartist": "0.10.1",
-    "classnames": "2.2.6",
-    "concurrently": "^4.1.1",
-    "express": "^4.17.1",
+    "express": "^4.16.3",
+    "if-env": "^1.0.4",
+    "mongodb": "^3.3.0-beta2",
     "mongoose": "^5.6.8"
   },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd client && npm run start",
+    "client": "cd client/public && npm run start",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build" },
+    "heroku-postbuild": "npm run build",
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "lint:check": "eslint . --ext=js,jsx;  exit 0",
+    "lint:fix": "eslint . --ext=js,jsx --fix;  exit 0",
+    "build-package-css": "cp src/assets/css/material-dashboard-react.css dist/material-dashboard-react.css",
+    "build-package": "npm run build-package-css && babel src --out-dir dist"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/material-dashboard-react.git"
+    "url": "git+https://github.com/rmathew21/project3.git"
   },
   "keywords": [],
   "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/creativetimofficial/material-dashboard-react/issues"
+    "url": "https://github.com/rmathew21/project3/issues"
   },
-  "homepage": "https://creativetimofficial.github.io/material-dashboard-react/#/dashboard",
+  "homepage": "https://educated-trader.herokuapp.com/",
   "optionalDependencies": {
     "@types/googlemaps": "3.36.4",
     "@types/markerclustererplus": "2.1.33",
@@ -37,6 +43,7 @@
     "typescript": "3.5.1"
   },
   "devDependencies": {
+    "concurrently": "^4.1.1",
     "eslint-config-prettier": "4.3.0",
     "eslint-plugin-prettier": "3.1.0",
     "prettier": "1.18.2"
