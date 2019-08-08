@@ -9,7 +9,8 @@
     "classnames": "2.2.6",
     "concurrently": "^4.1.1",
     "express": "^4.17.1",
-    "mongoose": "^5.6.8"
+    "mongoose": "^5.6.8",
+    "react-scripts": "^3.0.1"
   },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -18,7 +19,8 @@
     "client": "cd client && npm run start",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build" },
+    "heroku-postbuild": "npm run build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rmathew21/project3.git"
